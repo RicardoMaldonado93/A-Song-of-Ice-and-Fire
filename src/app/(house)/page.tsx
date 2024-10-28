@@ -10,14 +10,14 @@ export default async function Houses({ searchParams }: PageProps) {
   const housesWithMembers = await api.houses.getHousesWithSwornMembers(page);
 
   return (
-    <div className="grid overflow-auto p-4">
-      <h2 className="text-2xl font-bold mb-4">A Song of Ice and Fire</h2>
+    <section className="max-w-[1440px] mx-auto">
+      <h2 className="text-2xl font-bold my-4">A Song of Ice and Fire</h2>
 
       {housesWithMembers.length > 0 ? (
         <HouseTable houses={housesWithMembers} page={page} />
       ) : (
         <NoRecordsAdvice />
       )}
-    </div>
+    </section>
   );
 }
