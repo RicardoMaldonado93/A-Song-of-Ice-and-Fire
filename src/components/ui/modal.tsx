@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { Dialog, DialogContent, DialogOverlay } from "./dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "./dialog";
 
 export default function Modal({ children }: { children: React.ReactNode }) {
   const router = useRouter();
@@ -12,11 +12,14 @@ export default function Modal({ children }: { children: React.ReactNode }) {
 
   return (
     <Dialog defaultOpen={true} open={true} onOpenChange={handleOpenChange}>
-      <DialogOverlay>
-        <DialogContent className="lg:max-w-screen-lg overflow-y-scroll max-h-screen no-scrollbar">
-          {children}
-        </DialogContent>
-      </DialogOverlay>
+      <DialogContent className="overflow-y-scroll max-h-screen no-scrollbar">
+        <DialogHeader className="hidden">
+          <DialogTitle className="text-lg font-semibold">
+            Information
+          </DialogTitle>
+        </DialogHeader>
+        {children}
+      </DialogContent>
     </Dialog>
   );
 }
