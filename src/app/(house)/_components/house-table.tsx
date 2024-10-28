@@ -32,7 +32,9 @@ function HouseTable({ houses = [], page = 1 }: Props) {
         <TableHeader>
           <TableRow className="bg-primary/10 hover:bg-primary/20">
             <TableHead className="w-[200px] font-bold">House</TableHead>
-            <TableHead className="w-[200px] font-bold">Region</TableHead>
+            <TableHead className="w-[200px] font-bold hidden sm:table-cell">
+              Region
+            </TableHead>
             <TableHead className="font-bold">Sworn Members</TableHead>
           </TableRow>
         </TableHeader>
@@ -47,7 +49,9 @@ function HouseTable({ houses = [], page = 1 }: Props) {
               }
             >
               <TableCell className="font-medium">{house.name}</TableCell>
-              <TableCell>{house.region}</TableCell>
+              <TableCell className="hidden sm:table-cell">
+                {house.region}
+              </TableCell>
               <TableCell>
                 <div className="inline-flex gap-1 flex-wrap text-pretty">
                   {house.swornMembers.length > 0 ? (
