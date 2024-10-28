@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="dark container m-auto grid  grid-rows-[auto,1fr,auto] gap-2 bg-background px-4 font-sans antialiased md:gap-4 ">
+      <body className="dark grid grid-flow-dense gap-2 bg-background !px-4 font-sans antialiased md:gap-4 ">
         {modal}
         {children}
       </body>
