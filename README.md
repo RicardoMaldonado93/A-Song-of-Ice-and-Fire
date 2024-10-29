@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+#  A Song of Ice and Fire
 
-## Getting Started
+![A Song of Ice and Fire](https://github.com/RicardoMaldonado93/A-Song-of-Ice-and-Fire/blob/main/src/app/opengraph-image.png)
 
-First, run the development server:
+Welcome to **A Song of Ice and Fire** — an application built to help fans of *A Song of Ice and Fire* keep track of the series' extensive roster of characters and their fates. In a world where allegiances shift and heads roll, this app provides a simple interface to stay updated on the life (or death) status of the sworn members of Westeros' most prominent houses.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📜 Project Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+"As an avid fan of the epic series *A Song of Ice and Fire*, I have a hard time keeping up with all of the characters who lose their heads. As such, I would like to have an application that can help me track which characters from the series are alive or dead."
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Data Source:** [An API of Ice and Fire](https://anapioficeandfire.com/)  
+**Built With:** Next.js (App Router), with support for pagination, dynamic rendering, and intuitive UI components.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## ⚙️ Features
 
-To learn more about Next.js, take a look at the following resources:
+- **House List with Sworn Members:** Displays information on each of the first 10 houses in the *An API of Ice and Fire*, with details on their sworn members.
+- **Alive/Dead Status of Characters:** Easily see which characters are still breathing and which have met an untimely end.
+- **Death Details:** For deceased characters, a brief description of their demise (as provided by the API).
+- **Error Handling for Empty Houses:** If a house has no sworn members, a friendly message will display ("This house has no sworn members").
+- **Character Details Page:** Each character can be selected to view more detailed information, including their Aliases, affiliations, and any notable events they’ve been part of.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Technologies Used
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This application is built using:
 
-## Deploy on Vercel
+- **Next.js (with App Router)**: For modern routing, efficient data fetching, and server-side rendering.
+- **Tailwind CSS**: For utility-first styling, making it easy to achieve a responsive and consistent design.
+- **Shadcn/ui**: A component library that provides high-quality and customizable components to build a visually cohesive UI.
+- **TypeScript**: For type safety and maintainability.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🚀 Getting Started
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/an-interface-of-ice-and-fire.git
+   cd an-interface-of-ice-and-fire
