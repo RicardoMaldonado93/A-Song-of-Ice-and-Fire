@@ -1,11 +1,11 @@
+import { getCharacterDetail } from "@/actions/character-actions";
+import { ReturnHomeButton } from "@/components/custom/return-home-button";
 import type { PageProps } from "@/utils/typescript";
 import CharacterDetail from "./_components/character-detail";
-import { api } from "@/api";
-import { ReturnHomeButton } from "@/components/custom/return-home-button";
 
 export default async function CharacterID(props: PageProps) {
   const { id } = await props.params;
-  const details = await api.characters.getDetail(Number(id));
+  const details = await getCharacterDetail(Number(id));
 
   return (
     <section className="container">
