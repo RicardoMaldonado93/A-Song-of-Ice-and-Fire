@@ -1,6 +1,7 @@
 # An interface of Ice and Fire
 
-![An interface of Ice and Fire](https://github.com/RicardoMaldonado93/An-Interface-of-Ice-and-Fire/blob/main/src/app/opengraph-image.png)
+![An interface of Ice and Fire](https://github.com/RicardoMaldonado93/An-Interface-of-Ice-and-Fire/blob/main/src/app/twitter-image.png)
+
 
 Welcome to **An interface of Ice and Fire** — an application built to help fans of _A Song of Ice and Fire_ keep track of the series' extensive roster of characters and their fates. In a world where allegiances shift and heads roll, this app provides a simple interface to stay updated on the life (or death) status of the sworn members of Westeros' most prominent houses.
 
