@@ -40,3 +40,15 @@ This application is built using:
    git clone https://github.com/RicardoMaldonado93/An-Interface-of-Ice-and-Fire
    cd an-interface-of-ice-and-fire
    ```
+2. **Install the dependencies:**
+   ```bash
+   pnpm install
+   ```
+3. **Create and set the URL into the environment file (you can use the env.template file for guidance):**
+   ```bash
+   API_URL=https://anapioficeandfire.com/api
+   ```
+4. ***Run the app:**
+   ```bash
+   pnpm dev #this will open as default the port 3000
+   ```
